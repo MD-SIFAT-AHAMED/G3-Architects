@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Shared style */
+.display-flex{
+    display: flex;
+}
+/* Dark 3 */
+.text-gray{
+    color: #727272;
+}
+.text-primary{
+    background-color:#FF900E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Navber Section */
+.navber , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navber{ 
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+.banner{
+    margin-top: 80px;
+}
+.brandName p{
+    font-size: 3rem;
+    color: gray;
+}
+.navItem {
+    text-decoration: none;
+    gap: 30px;
+    list-style: none;
+}
+.navItem a{
+    text-decoration: none;
+    color:gray;
+    font-size: 1.25rem;
+}
+.bannerContent{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bannerDescription{
+    font-size: 1.25rem;
+}
+.bannerTitle{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.bannerDescription{
+    margin: 30px 0px;
+}
+.bannerImg{
+    width: 100%;
+}
+/* Features section*/
+.features{
+    align-items: center;
+}
+.teamImgContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.quickList{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.teamDescription{
+    margin: 20px 0px;
+}
+/* Mobile Device */
+@media screen and (max-width: 576px){
+    .navber,
+    .navItem{
+        flex-direction: column;
+    }
+    .banner{
+        margin-top: 10px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .teamImgContainer{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .quickList{
+        text-align: center;
+    }
+}
